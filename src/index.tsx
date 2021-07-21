@@ -31,9 +31,9 @@ const App: React.FC = () => {
     <div className={st.bg} />
     <div className={st.title}>
       <div className={st.appName}>RANDOM BLOCK</div>
-      <div className={st.ctrl}>
-        <div onClick={() => ipcRenderer.send('minimize')}><FontAwesomeIcon icon={faCaretDown} size="lg" /></div>
-        <div onClick={() => window.close()}><FontAwesomeIcon icon={faTimes} size="lg" /></div>
+      <div className={st.buttons}>
+        <div className={st.minimize} onClick={() => ipcRenderer.send('minimize')}><FontAwesomeIcon icon={faCaretDown} size="lg" /></div>
+        <div className={st.close} onClick={() => window.close()}><FontAwesomeIcon icon={faTimes} size="lg" /></div>
       </div>
     </div>
     <div className={st.keys}>

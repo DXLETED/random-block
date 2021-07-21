@@ -28,8 +28,7 @@ module.exports = {
           { loader: 'css-loader', options: { modules: { localIdentName: '[local]_[hash:base64:5]' } } },
           'sass-loader'
         ]
-      },
-      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: { loader: 'url-loader' } }
+      }
     ]
   },
   resolve: {
